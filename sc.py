@@ -22,7 +22,7 @@ fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Hoặc sử dụng 'MJPG' nếu khô
 # Lấy thời điểm bắt đầu
 start_time = time.time()
 
-# Đếm số video đã lưu
+# Đếm số video đã lưu dd
 video_count = 1
 
 # Biến để xác định khi nào bắt đầu thu frame
@@ -49,7 +49,7 @@ while True:
         cv2.imshow('Camera', frame)
 
         # Ghi frame vào video
-        out.write(frame)
+        out.write(frame) #dd
 
         # Thoát khỏi vòng lặp khi nhấn phím 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
